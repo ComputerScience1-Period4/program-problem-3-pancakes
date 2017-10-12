@@ -35,7 +35,7 @@ void pause() {
  
 void main() {
 	int number; // X is a three digit number 
-	int digit_a; // hundreds place
+	int digit_a; // hundreds place //delete the digit so its easier to read- JT
 	int digit_b; // tens place
 	int digit_c; // ones place
 
@@ -58,7 +58,27 @@ void main() {
 		cout << "neither";
 	}
 	
+	while( x < 30){
+		cout << "Choose a 3 Digit number:" << endl;
+	cin >> number;
+	digit_a = number / 100;
+	digit_b = (number % 100) / 10;
+	digit_c = number % 10;
+
+	if (digit_a > digit_b && digit_b > digit_c) {
+	cout << "descending";
+}
+	else if (digit_a < digit_b && digit_b < digit_c) {
+
+		cout << "ascending"; 
+
+	}
 	
+	else { 
+		
+		cout << "neither";
+	}
+	}
 	
 pause(); 
 

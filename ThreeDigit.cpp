@@ -34,7 +34,8 @@ void pause() {
 // MAIN
  
 void main() {
-for (int i = 0; i < 30; ++i) {
+for (int i = 0; i < 30; ++i) { //makes loop for 30 times
+	
 	int number; // X is a three digit number 
 	int digit_a; // hundreds place
 	int digit_b; // tens place

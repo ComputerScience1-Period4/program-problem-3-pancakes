@@ -2,9 +2,9 @@
 
 Angela Liu and Sofia Lalani - October 5th 2017, Period 4
 
-Ascending Descending 
+Ascending Descending
 
-Very Basic Coding using integers 
+Very Basic Coding using integers
 
 */
 
@@ -32,35 +32,41 @@ void pause() {
 }
 
 // MAIN
- 
+
 void main() {
 	int number; // X is a three digit number 
-	int digit_a; // hundreds place
-	int digit_b; // tens place
+	int digit_a; // hundreds place  /* remove the digits, to make it easier to read -Jarrett Reed */
+	int digit_b; // tens place	/* put comments on what your code does */ 
 	int digit_c; // ones place
 
-	cout << "Choose a 3 Digit number:" << endl;
-	cin >> number;
-	digit_a = number / 100;
-	digit_b = (number % 100) / 10;
-	digit_c = number % 10;
+	int x = 0;
+	while (x < 30) {
+		int number;
+		cout << "Choose a 3 Digit number:" << endl;
+		cout << endl;
+		cin >> number;
+		digit_a = number / 100;
+		digit_b = (number % 100) / 10;
+		digit_c = number % 10;
 
-	if (digit_a > digit_b && digit_b > digit_c) {
-	cout << "descending";
-}
-	else if (digit_a < digit_b && digit_b < digit_c) {
+		if (digit_a > digit_b && digit_b > digit_c) { /* better spacing */
+			cout << number << " is descending";
+			cout << endl;
+		}
+		else if (digit_a < digit_b && digit_b < digit_c) {
 
-		cout << "ascending"; 
+			cout << number << " is ascending";
+			cout << endl;
 
+		}
+		else {
+
+			cout << number << " is neither";
+			cout << endl;
+		}
+		x++;
 	}
-	else { 
-		
-		cout << "neither";
-	}
-	
-	
-	
-pause(); 
+	pause();
 
 
 

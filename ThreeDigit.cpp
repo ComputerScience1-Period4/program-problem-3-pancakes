@@ -34,35 +34,34 @@ void pause() {
 // MAIN
  
 void main() {
+for (int i = 0; i < 30; ++i) { //makes loop for 30 times
+	
 	int number; // X is a three digit number 
 	int digit_a; // hundreds place
 	int digit_b; // tens place
 	int digit_c; // ones place
 
-	cout << "Choose a 3 Digit number:" << endl;
+	cout << "Choose a 3 Digit number: ";
 	cin >> number;
 	digit_a = number / 100;
 	digit_b = (number % 100) / 10;
 	digit_c = number % 10;
 
-	if (digit_a > digit_b && digit_b > digit_c) {
-	cout << "descending";
+	if (digit_a > digit_b && digit_b > digit_c) { 
+	cout << number << " is descending \n";//prints out descending
 }
 	else if (digit_a < digit_b && digit_b < digit_c) {
 
-		cout << "ascending"; 
+		cout << number << " is ascending \n"; //prints out ascending 
 
 	}
 	else { 
 		
-		cout << "neither";
+		cout << number << " is neither \n"; //prints out neither 
 	}
 	
 	
-	
-pause(); 
-
-
+}
 
 
 

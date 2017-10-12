@@ -34,6 +34,7 @@ void pause() {
 // MAIN
  
 void main() {
+for (int i = 0; i < 30; ++i) {
 	int number; // X is a three digit number 
 	int digit_a; // hundreds place
 	int digit_b; // tens place
@@ -45,24 +46,21 @@ void main() {
 	digit_b = (number % 100) / 10;
 	digit_c = number % 10;
 
-	if (digit_a > digit_b && digit_b > digit_c) {
-	cout << "descending";
+	if (digit_a > digit_b && digit_b > digit_c) { 
+	cout << number << " is descending";//prints out descending
 }
 	else if (digit_a < digit_b && digit_b < digit_c) {
 
-		cout << "ascending"; 
+		cout << number << " is ascending"; //prints out ascending 
 
 	}
 	else { 
 		
-		cout << "neither";
+		cout << number << " is neither"; //prints out neither 
 	}
 	
 	
-	
-pause(); 
-
-
+}
 
 
 

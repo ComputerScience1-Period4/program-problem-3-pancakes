@@ -46,16 +46,16 @@ void main() {
 	digit_c = number % 10;
 
 	if (digit_a > digit_b && digit_b > digit_c) {
-	cout << "descending";
+	cout << "the number is descending";
 }
 	else if (digit_a < digit_b && digit_b < digit_c) {
 
-		cout << "ascending"; 
+		cout << "the number is ascending"; 
 
 	}
 	else { 
 		
-		cout << "neither";
+		cout << "the number is neither";
 	}
 	
 	
